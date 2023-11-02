@@ -1,0 +1,827 @@
+
+/* In general Body details of webpage */
+body{
+    margin: 0px;   
+}
+
+body div:link{text-decoration: none;}
+
+.highlight-color{
+    color: #2857a4;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/*____SECTION STYLING FOR COMMON DESIGN ___*/
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
+
+
+/*This section will allow us to set alternate color */
+.section:nth-child(2n){
+    background-color: lightgrey;
+}
+
+.section:nth-child(2n+1){
+    background-color: white;
+}
+
+.section:target{
+    box-shadow: 0px 0px 6px 4px grey;
+    
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* _____________SECTION: Body header and background image header_____________ */
+#body-header{
+
+    height: 65vh;
+    margin-top:-16px;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+/* _________SECTION : nav bar section_____________ */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+/* general class to align a text in center */
+
+.text-center{
+    text-align: center;
+}
+
+
+/* Design for all elements in list */
+.horizontal-list li{
+    display: inline-block;
+    margin: 30px 15px 0px 15px;
+    font-size: 1.2rem;
+}
+
+/* this applies to all anchor tags in the list */
+.horizontal-list li a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+/* for nav-menu class */
+
+
+.nav-menu li a{
+    transition: color 0.5s,  border-bottom 4s;
+}
+
+/*  hover and color-transitions for nav-bar */
+
+.nav-menu li a:hover{
+    color:lightgrey;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+
+/* _________SECTION : Name and Social-Icons_____________ */
+#name-social-container{
+    margin-top: 10vh;
+}
+#my-name{
+    color:white;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#my-tagline{
+    color:white;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i{
+    color:white;
+    padding: 10px;  
+    font-size: 1.2rem;  
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px #FFCCCB ;
+}
+
+
+
+/* _________SECTION : About Section_____________ */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+/*This is for image container*/
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    box-shadow: 0px 0px 4px 6px #c8bd9f;
+    border-radius:50%;
+    
+}
+
+/*This is for actual image tag*/
+#my-image img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    
+    
+}
+
+.about-text{
+    height: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 1.5rem;
+}
+
+/* _________SECTION : Skills Section_____________ */
+
+.skills-display{
+    margin: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 20px;
+
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skills-display>div:hover{
+    box-shadow: 0px 0px 6px 4px grey ;
+    margin-left: 10px;
+    margin-right: 10px;  
+} 
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+.skill-progress-dsa{
+    width: 12rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skill-progress-css{
+    width: 10rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skill-progress-os{
+    width: 13rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skill-progress-database{
+    width: 13rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skill-progress-algo{
+    width: 12rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+/* percentage class */
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.mb-orange{
+    background-color:orange;
+}
+
+.mb-red{
+    background-color: red;
+}
+
+.mb-black{
+    background-color: black;
+}
+.mb-golden{
+    background-color: goldenrod;
+}
+
+.mb-green{
+    background-color: green;
+}
+
+.mb-purple{
+    background-color: purple;
+}
+
+.mb-violet{
+    background-color: violet;
+}
+
+
+
+
+
+/* class for 80% skill level */
+.eighty-per{
+    width: 80%;
+    height: inherit;
+    border-radius: 0.8rem;
+}
+
+.ninty-per{
+    width: 90%;
+    height: inherit;
+    border-radius: 0.8rem;
+}
+
+.seventy-per{
+    width: 70%;
+    height: inherit;
+    border-radius: 0.8rem;
+}
+.sixty-per{
+    width: 70%;
+    height: inherit;
+    border-radius: 0.8rem;
+}
+
+.fifty-per{
+    width: 50%;
+    height: inherit;
+    border-radius: 0.8rem;
+}
+
+/* properties for skill name */
+.skill-name span{
+    padding: 4px;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* _________SECTION : Education_____________ */
+
+.timeline{
+    margin: 30px;
+    position: relative;
+    width: 70%;
+    
+
+}
+
+.timeline-box{
+    position: relative;
+    padding:10px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px;
+    display: flex;
+
+}
+
+.timeline-box:nth-child(2n+1){
+    flex-direction: column;
+    align-items: flex-end;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content:'';
+    position: absolute;
+    top: 25%;
+    right: -13.3%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #2857a4;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content:'';
+    position: absolute;
+    top: 25%;
+    left: -9.6%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #2857a4;
+    z-index: 1;
+}
+
+.iitm::after{
+    content:'';
+    background-image: url(iitm_logo.webp);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+}
+
+.viit::after{
+    content:'';
+    background-image: url(viit.webp);
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+}
+
+
+.fiitjee::after{
+    content:'';
+    background-image: url(fiitjee_logo.webp);
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+}
+
+.gfg::after{
+    content:'';
+    background-image: url(gfg.webp);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 66%;
+    width: 0;
+    border: 3px dashed #2857a4 ;
+    margin-top: 6%;
+    left: 50%;
+
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    transform: rotate(270deg);
+    z-index: 2;
+}
+
+
+/*responsive for education section */
+
+@media screen and (max-width:600px){
+    .timeline-divider{
+        left:5%;
+        margin-top: 18%;
+        height: 65%;
+        
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left:-11% !important;
+    }
+    
+}
+
+
+
+
+/* _________SECTION : Experience_____________ */
+
+.timeline-exp{
+    margin: 30px;
+    position: relative;
+    width: 70%;
+
+}
+
+.timeline-box-exp{
+    position: relative;
+    padding:10px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    
+    margin: 5px;
+    display: flex;
+
+}
+
+.timeline-box-exp:nth-child(2n+1){
+    flex-direction: column;
+    align-items: flex-end;
+}
+.timeline-box-exp:nth-child(2n){
+    left: 53%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timeline-box-exp:nth-child(2n+1)::after{
+    content:'';
+    position: absolute;
+    top: 25%;
+    right: -13.3%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #2857a4;
+    z-index: 1;
+}
+
+.timeline-box-exp:nth-child(2n)::after{
+    content:'';
+    position: absolute;
+    top: 25%;
+    left: -9.5%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #2857a4;
+    z-index: 1;
+}
+
+.timeline-divider-exp{
+    position: absolute;
+    height: 45%;
+    width: 0;
+    border: 3px dashed #2857a4 ;
+    margin-top: 7%;
+    left: 50%;
+
+}
+
+.timeline-traveller-exp{
+    position: sticky;
+    top: 30%;
+    transform: rotate(270deg);
+    z-index: 2;
+}
+
+/*responsive for experience section */
+@media screen and (max-width:600px){
+    .timeline-divider-exp{
+        left:5%;
+        margin-top: 20%;
+        height: 45%;
+        
+    }
+    .timeline-box-exp{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box-exp::after{
+        left:-11% !important;
+    }
+    
+}
+
+/* _________SECTION : Portfolio Projects____________ */
+
+.projects-space{
+    margin: 30px;
+    height: 50%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*
+.projects-space div{
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgray;
+    width: 300px;
+}
+
+*/
+
+.outer-design{
+    border: 3px solid black;
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+    overflow: auto;
+    border-radius: 10px;
+
+}
+
+#project-detail-1{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#project-detail-1:target{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    left:25%;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-wrap: break-word;
+}
+
+
+#project-detail-2{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#project-detail-2:target{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    left:25%;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-wrap: break-word;
+}
+
+
+#project-detail-3{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#project-detail-3:target{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    left:25%;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-wrap: normal;
+}
+
+#project-detail-4{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#project-detail-4:target{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    left:25%;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-wrap: normal;
+}
+
+#project-detail-5{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#project-detail-5:target{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    left:25%;
+    background-color: lightgray;
+    border: 2px solid black;
+    overflow-wrap: normal;
+}
+
+
+
+
+
+
+/* _________SECTION : Contact Me____________ */
+
+
+.form-section{
+    height: 75%;
+    width: 100%;
+    background-image: linear-gradient(45deg,#28559f,#403066);
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sides-format{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    
+}
+
+
+#left-section{
+    color:white;
+    width: 60%;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#left-section dec{
+    margin: 3%;
+    padding: 2%;
+    width: fit-content;
+}
+
+input{
+    border: none;
+    background-color: #f2f2f2;
+    border: 1px solid #28559f;
+    padding: 10px;
+    border-radius: 4px;
+    width: 250px;
+    outline: none;
+    margin-top: 20px;
+    
+}
+
+#submit{
+    width: fit-content;
+    border: 1px solid #28559f;
+    border-radius: 4px;
+}
+
+#submit:hover{
+    box-shadow: 0px 0px 4px 6px white;
+    top:2px;
+}
+
+#right-section{
+    color:white;
+    width: 60%;
+    margin: 10%;
+    
+}
+
+#right-section h1,h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#right-section ul li{
+    font-size: 1.2rem;
+    margin: 5%;
+}
+
+@media screen and (max-width:600px){
+    
+    .form-section{
+        height: 75%;
+        width: 100% !important;
+        background-image: linear-gradient(45deg,#28559f,#403066) !important;
+    
+    }
+    .sides-format{
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    #left-section{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #left-section dec{
+        margin: 4%;
+        padding: 4%;
+    }
+
+    #right-section{
+        width: 100%;
+        margin-right: 3%;
+        text-align: center;
+    }
+}
